@@ -1,0 +1,54 @@
+Singleton:                                                        public class SingletonLazy {
+public class SingletonEager {                                     
+                                                                  
+private static SingletonEager eager = new SingletonEager();       private static SingletonLazy lazy ;
+                                                                  
+private SingletonEager() {} // not to get instantiated            private SingletonLazy() {} // not to get instantiated
+                                                                  
+public static SingletonEager getInstance()                        public static synchronized SingletonLazy getInstance()
+{                                                                 {
+return eager;                                                     if(lazy == null)
+}                                                                 	{
+                                                                  	 synchronized (SingletonLazy.class)
+}                                                                 	  {
+                                                                  		if(lazy == null)
+																		 lazy = new SingletonLazy();
+																		
+                                                                  		 return lazy;
+                                                                  		 } } } }
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+factory:                                                               abstract factory:
+                                                                       
+Details - RAM, hdd, cpu                                                IComputer - PC and Server
+IComputer - PC and Server                                              AbstractComputerFactory - PCFactory and Serverfactory
+ComputerFactory -                                                      
+ IComputer	createComputer(enum type, Details details)                 createComputer() - implmented by both pc and server factory
+	{                                                                  
+		IComputer comp = null;                                         ComputerFactory - 
+		switch(type)                                                   createComputer(AbstractComputerFactory acf) => acf.createComputer();
+		case type.PC: comp =                                           
+		new PC(details.RAM, details.hdd, details.cpu); break;          Client:
+		case type.Server: comp =                                       var pc = ComputerFactory.createComputer(new PCFactory("16GB","500GB", "Core"));
+		new Server(details.RAM, details.hdd, details.cpu); break;      var server = ComputerFactory.createComputer(new ServerFactory("50GB","1000GB", "Core 3"));
+		                                                               var laptop = ComputerFactory.createComputer(new laptop
+		return comp;
+	}
+	
+Client:
+var pc = new ComputerFactory.createComputer(
+type.PC, new details("16GB","500GB","Core")
+);
+var server = new ComputerFactory.createComputer(
+type.Server, new details("16GB","500GB","Core")
+);
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+React                      node                                  js
+- types of component       - promises parallel                   - array and object dislect
+- access of components     - Event loop and callback loop        - prototype chaining
+                           - get data from ui code in react      - multi-threading in js on browser
+                           - 3 principlese of Redux              - variable hoisting
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+owning an experience of more than 11 years in IT industry will add a lot of ideas and solutions to problems as well as ways to optimization. Knowlwdgw over technologies like: Data structures, Algos, cloud computing: AWS, MS SQL, Angular 2/4/6/7/8 will add to value to company.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

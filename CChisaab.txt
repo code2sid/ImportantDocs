@@ -1,0 +1,22 @@
+May SCC					May AmexCC
+DMART	= 4,500         Paytm	= 5000
+Paytm	= 5,000         amz		= 3000
+Beers	= 4,000         paytm	= 5000
+Blosom	= 2,500         Flipcrt = 2000 MOP
+Vihaan	= 3,000         paytm	= 1100
+swbhmani= 4,500         DMART	= 4000
+medicine= 2,000         memsp	= 6000
+                        
+total 	= 24500         total = 26000
+
+
+
+
+
+
+
+
+
+
+
+

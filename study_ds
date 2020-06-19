@@ -1,0 +1,31 @@
+Skipped:
+========
+8.14: boolean Evaluation
+8.13: stacks of boxes
+8.12: 8 Queen
+8.11: Coins
+8.10: paint
+8.9: parentheses: wierd
+8.8/8.7: permus of string with dups/ w/o dups
+8.6: tower of hannoi
+
+10.7
+10.9 - sorted matrix item srch (binary way)
+4.8 BST FCA / BT FCA
+4.11 Random node
+
+Must
+====
+4.6 Successsor
+4.7 Build Order 
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4	-	100              Peaks and Valley            find string in string array (using binary search)
+5	-	101              1,2,2,3,3,4,4,5,5           "ball", {"","","","all","","","","ball","","","","call","","","","doll","","","",}
+6	-	110              1,2,3,4,5,6,7,8,9
+7	-	111
+8	-	1000
+9	-	1001
+10	-	1010
